@@ -1,0 +1,138 @@
+html {
+    font-family: Roboto,arial,sans-serif;
+    color: rgb(82 82 82);
+    line-height: 1.5em;
+    font-size: small;
+
+}
+html, div, p, span, input, label, textarea, legend {
+    box-sizing: border-box;
+}
+
+legend {
+    width: 90px;
+    margin-left: 90px;
+    border: 1px solid black;
+}
+
+fieldset {
+    width: 540px;
+    margin: auto;
+    border: 1px solid black;
+}
+.parent {
+    margin: auto;
+    width: 180px;
+}
+p {
+    width:fit-content;
+    margin: auto;
+    font-size: 80%;
+}
+
+.name-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.name-email > div {
+    width: 100%;
+}
+
+
+.status-date {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.languages {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: bottom;
+
+}
+
+.languages > span {
+    display: flex;
+
+}
+
+span > label {
+    margin-top: 3px;
+}
+
+input {
+    display: block;
+    border: 1px solid rgb(82 82 82);
+    width: 100%;
+}
+
+label {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+#check-sign {
+    font-size: 80%;
+    line-height: 1em;
+    margin: auto;
+    display: flex;
+}
+
+#check {
+    display: flex;
+    padding-top: 5px;
+    justify-content: left;
+}
+
+input[type="checkbox"] {
+    width: 30%;
+}
+#comments {
+    display: flex;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+
+}
+.comments {
+    text-align: left;
+    margin-left: 12px;
+}
+
+#check > div {
+    max-width: 50%;
+}
+
+.button {
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid rgb(82 82 82);
+}
+
+.status-date > div {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    color: rgb(82 82 82);
+    border: 1px solid rgb(82 82 82);
+    width: 90px;
+    height: 1.5em;
+    background-color: white;
+
+}

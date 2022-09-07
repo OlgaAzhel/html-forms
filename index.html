@@ -1,64 +1,78 @@
 <!DOCTYPE html>
 <html lang="en-Us">
     <head>
+        <link rel="stylesheet" href="layout.css">
         <title>Building HTML forms</title>
     </head>
     <body>
         <form method="post">
             <fieldset>
-                <legend>Add user</legend>
-                <div>
-                    <label for="firstName">First Name</label>
-                    <input id="fitstName" type="text">
-                </div>
-                <div>
-                    <label for="lastName">Last Name</label>
-                    <input id="lastName" type="text">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" for="email">
-                </div>
-                <div>
-                    <label for="status">Status</label>
-                    <select id="status">
-                        <option value="student">Student</option>
-                        <option value="teacher">Teacher</option>
-                        <option value="guest">Guest</option>
-                    </select>
-                </div>
-                <div>
-                    <p>Choose your favourite programming language:</p>
+                <legend>add user</legend>
+                <div class="parent">
+                <div class="name-email">
                     <div>
-                        <label for="html">HTML</label>
-                        <input type="radio" id="html">
+                        <label for="firstName">First Name:</label>
+                        <input id="firstName" type="text">
                     </div>
                     <div>
-                        <label for="css">CSS</label>
-                        <input type="radio" id="css">
+                        <label for="lastName">Last Name:</label>
+                        <input id="lastName" type="text">
                     </div>
                     <div>
-                        <label for="js">JavaScript</label>
-                        <input type="radio" id="js">
+                        <label for="email">Email:</label>
+                        <input type="email" for="email" id="email">
+                    </div>
+                </div>
+                <div class="status-date">
+                    <div>
+                        <label for="status">Status:</label>
+                        <select id="status">
+                            <option></option>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="date">Date:</label>
+                        <input placeholder="" type="text" onfocus="(this.type = 'date')"  id="date">
+                        </div>
+                </div>
+                <div id="language-choose">
+                    <p>Choose your favourite language:</p>
+                    <div class="languages">
+                         <span>
+                            <input type="radio" id="html">
+                            <label for="html">HTML</label>
+                         </span>
+                        <span>
+                            <input type="radio" id="css">
+                            <label for="css">CSS</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="js">
+                            <label for="js">JS</label>
+                        </span>
                     </div>
                 </div>
                 <div>
-                    <label for="comments">Comments</label>
-                    <textarea name="comments" id="comments" cols="30" rows="4"></textarea>
+                    <label class="comments" for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" columns="10" rows="4"></textarea>
                 </div>
-                <div>
-                    <label for="date">Date</label>
-                    <input type="date" id="date">
+                <div id="check">
+                    <div id="check-sign">
+                        <input type="checkbox" id="newsteller">
+                        <label for="newsteller">sign up for news</label>
+                    </div>
+                    <div id="check-sign">
+                        <input type="checkbox" id="agree">
+                        <label for="agree">agree to terms</label>
+                    </div>
                 </div>
-                <div>
-                    <label for="newsteller">Sign up for newsletter</label>
-                    <input type="checkbox" id="newsteller">
-                </div>
-                <div>
-                    <label for="agree">Agree to terms and conditions</label>
-                    <input type="checkbox" id="agree">
-                </div>
+                <div class="button">
                 <button type="submit">Submit</button>
+                </div>
+            </div>
             </fieldset>
         </form>
     </body>
